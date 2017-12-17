@@ -34,7 +34,7 @@ public class GrabPageInfo {
 
 	/**
 
-	 * 抓取每本书的info
+	 * 抓取每本书的信息
 
 	 * 
 
@@ -62,7 +62,7 @@ public class GrabPageInfo {
 
 	/**
 
-	 * 保存书的url
+	 * 保存书的url地址
 
 	 * 
 
