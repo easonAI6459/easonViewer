@@ -6,6 +6,7 @@ import java.util.Map;
 public class CookieSet {
 	
 	public static void setCookies(Map<String, String> cookies){
+		
 		//book.douban.com
 
 				cookies.put("__utma", "30149280.670940285.1512008546.1513413629.1513429398.4");
@@ -21,8 +22,6 @@ public class CookieSet {
 				cookies.put("_pk_ses.100001.3ac3", "*");
 
 				cookies.put("bid", "CDy0B-lBYHA");
-
-				//read.douban.com
 
 				cookies.put("_ga", "GA1.3.670940285.1512008546");
 
@@ -40,12 +39,8 @@ public class CookieSet {
 						
 						+ "E5%25AE%259E%25E8%25B7%25B5%26cat%3D1001%22%5D");
 
-				//www.douban.com
-
-				
 				cookies.put("_pk_id.100001.8cb4", "57ca34c617b48180.1512008485.5.1513429406.1513413623.");
 			
-				
 				cookies.put("_pk_ref.100001.8cb4", "%5B%22%22%2C%22%22%2C1513436218%2C%22https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DXY8poAepEQjHKUZJeULMAkd9YhCwwnAcn2PSVE3EGKC%26wd%3D%26eqid%3Db5f03b2d0001119a000000045a34db9d%22%5D");
 				
 				cookies.put("__utmv","30149280.17112");
@@ -61,6 +56,17 @@ public class CookieSet {
 				cookies.put("gr_session_id_22c937bbd8ebd703f2d8e9445f7dfd03","bd56f4b2-4886-4286-ae17-0d7869cb7450");
 				
 				cookies.put("gr_user_id","39968ae6-c937-4e5a-b0a5-70b6c16eec48");
+
+
+
+
+
+
+
+
+
+
+
 
 				
 	}

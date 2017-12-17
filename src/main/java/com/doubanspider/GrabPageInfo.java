@@ -14,6 +14,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class GrabPageInfo {
+	
 	public static ExecutorService executorService = Executors.newFixedThreadPool(1);
 
 	public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class GrabPageInfo {
 			ArrayList<String> bookUrls = new ArrayList<>();
 
 			//分别抓取：互联网、编程、算法
-			bookUrls = downloadBookUrl("编程");
+			bookUrls = downloadBookUrl("算法");
 			GrabPageInfo.getBookInfo(bookUrls);
 
 		}catch(Exception e){
@@ -31,12 +32,9 @@ public class GrabPageInfo {
 	}
 
 
-
 	/**
 
 	 * 抓取每本书的信息
-
-	 * 
 
 	 * @param ArrayList<String>
 
@@ -86,18 +84,14 @@ public class GrabPageInfo {
 
 			while (true) {
 
-				// 获取cookies
-
 				String a = "https://book.douban.com/tag/" + keyWord + "?start=" + index + "&type=T";
 				Document doc = Jsoup.connect(a)
 
 						.header("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)").cookies(cookies)
 
-						.timeout(3000).get();
+						.timeout(13000).get();
 		
 				Elements newsHeadlines = doc.select("ul").select("h2").select("a");
-
-				System.out.println("本页：  " + newsHeadlines.size());
 
 				for (Element e : newsHeadlines) {
 

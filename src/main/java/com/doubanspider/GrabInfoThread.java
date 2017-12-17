@@ -35,7 +35,7 @@ public class GrabInfoThread implements Runnable{
 
 	 * 
 
-	 * @param ArrayList<String>
+	 * @param String bookUrl,SaveInfo saveInfo,Map<String, String> cookies
 	 * @throws IOException 
 
 	 */
@@ -46,7 +46,7 @@ public class GrabInfoThread implements Runnable{
 
 				.header("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)").cookies(cookies)
 
-				.timeout(3000).get();
+				.timeout(13000).get();
 
 		Elements titleElement = doc.getElementsByClass("subject clearfix").select("a");
 
@@ -133,7 +133,7 @@ public class GrabInfoThread implements Runnable{
 
 		}
 
-		// 通过睡眠防止ip被封
+		// 通过睡眠防止IP被封
 
 		try {
 
