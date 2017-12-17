@@ -31,7 +31,7 @@ public class GrabInfoThread implements Runnable{
 	
 	/**
 
-	 * 抓取每本书的info
+	 * 抓取每本书的信息
 
 	 * 
 
